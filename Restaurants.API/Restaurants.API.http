@@ -10,8 +10,11 @@ Random-int: {{$randomInt}}
 
 ###
 
-POST {{Restaurants_API_HostAddress}}/api/weatherforecast
+POST {{Restaurants_API_HostAddress}}/api/weatherforecast/generate?count=5
 Content-Type: application/json
 
-"Jamie"
+{
+    "min": -23,
+    "max": 23
+}
 
